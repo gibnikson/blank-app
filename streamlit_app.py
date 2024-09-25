@@ -1,6 +1,9 @@
 import streamlit as st
 import requests 
 
+##Variables
+packet_array = [];
+
 st.title("Welcome to MTS Mobile Micro Manager!")
 url = st.text_input('Enter the URL to scrape data from', "https://asp-interface.arc.nasa.gov/API/parameter_data/N806NA/PICARD")
 full_packet = requests.get(url);
